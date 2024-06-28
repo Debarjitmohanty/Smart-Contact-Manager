@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      .container{
+        margin:auto;
+        width:50%;
+        padding:30px;
+        background:#e2e2e2;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 data-th-text="${name}">Welcome to home page</h1><br>
+        <p>Youtube channel<span th:text="${youtube}"></span></p><br>
+        <a data-th-href="${linkedin}">click here</a>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sint eum repudiandae beatae atque nulla quas obcaecati fugit expedita facilis, totam fugiat commodi? Vitae adipisci ad aspernatur. Provident enim repudiandae dolor. Autem aliquam, labore ducimus, dolores quia nemo ipsum, adipisci aliquid animi voluptate dolorem doloremque repudiandae iure nihil mollitia quis.</p>
+      
+
+    </div>
+</body>
+</html>
