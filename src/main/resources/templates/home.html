@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-  <style>
-      .container{
-        margin:auto;
-        width:50%;
-        padding:30px;
-        background:#e2e2e2;
-    }
-  </style>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" th:href="@{/css/output.css}">
+    
 </head>
 <body>
-    <div class="container">
-
-        <h1 data-th-text="${name}">Welcome to home page</h1><br>
-        <p>Youtube channel<span th:text="${youtube}"></span></p><br>
-        <a data-th-href="${linkedin}">click here</a>
-
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sint eum repudiandae beatae atque nulla quas obcaecati fugit expedita facilis, totam fugiat commodi? Vitae adipisci ad aspernatur. Provident enim repudiandae dolor. Autem aliquam, labore ducimus, dolores quia nemo ipsum, adipisci aliquid animi voluptate dolorem doloremque repudiandae iure nihil mollitia quis.</p>
-      
-
+    <div class="bg-gray-200 w-1/2 p-4 flex flex-col items-center space-y-3 mx-auto m-4">
+        <h1 class="text-2xl font-bold" th:text="${name}">Welcome to home page</h1>
+        <p class="text-xl text-gray-700">Youtube channel <span th:text="${youtube}"></span></p>
+        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam sint eum repudiandae beatae atque nulla quas obcaecati fugit expedita facilis, totam fugiat commodi? Vitae adipisci ad aspernatur. Provident enim repudiandae dolor. Autem aliquam, labore ducimus, dolores quia nemo ipsum, adipisci aliquid animi voluptate dolorem doloremque repudiandae iure nihil mollitia quis.</p>
+    
+        <div>
+            <button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600">Click Here</button>
+        </div>
     </div>
+    <!-- flow bite component -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 </body>
 </html>
